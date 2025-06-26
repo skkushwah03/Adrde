@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ADRDE Inventory Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-700">ADRDE Inventory</h1>
+      <nav class="space-x-6 text-sm sm:text-base">
+        <a href="dashboard.html" class="text-gray-700 hover:text-indigo-600">Home</a>
+        <a href="shop.html" class="text-gray-700 hover:text-indigo-600">Shop</a>
+        <a href="cart.html" class="text-gray-700 hover:text-indigo-600">Cart</a>
+        <a href="service.html" class="text-gray-700 hover:text-indigo-600">Services</a>
+        <!-- <a href="about.html" class="text-gray-700 hover:text-indigo-600">About</a> -->
+        <!-- <a href="signup.html" class="text-gray-700 hover:text-indigo-600">Register</a> -->
+        <!-- <a href="login.html" class="text-gray-700 hover:text-indigo-600">Login</a> -->
+         <a href="#" onclick="logout()" class="text-gray-700 hover:text-red-600 font-semibold">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Image Slider -->
+  <section class="relative w-full max-w-6xl mx-auto mt-4">
+    <div class="overflow-hidden rounded-lg shadow-lg h-[300px] sm:h-[300px]">
+      <div id="slider" class="flex transition-transform duration-700 ease-in-out h-full">
+        <img src="assets/4.jpg" alt="Paratrooper" class="w-full h-full object-cover flex-shrink-0">
+        <img src="assets/1.jpg" alt="Payload Drop" class="w-full h-full object-cover flex-shrink-0">
+        <img src="assets/2.jpg" alt="Airborne Drop" class="w-full h-full object-cover flex-shrink-0">
+        <img src="assets/3.jpg" alt="ADRDE Airship" class="w-full h-full object-cover flex-shrink-0">
+        <img src="assets/4.jpg" alt="Missile Launcher" class="w-full h-full object-cover flex-shrink-0">
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button onclick="prevSlide()" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/40 text-white px-3 py-1 rounded-full">⟨</button>
+    <button onclick="nextSlide()" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/40 text-white px-3 py-1 rounded-full">⟩</button>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold text-center text-gray-800 mb-8">Key Features</h3>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+        <div class="p-6 bg-indigo-100 rounded-xl shadow hover:shadow-md">
+          <h4 class="text-lg font-semibold text-indigo-800 mb-2">Live Inventory Tracking</h4>
+          <p class="text-gray-700">Monitor available, issued, and under-maintenance items in real time.</p>
+        </div>
+        <div class="p-6 bg-indigo-100 rounded-xl shadow hover:shadow-md">
+          <h4 class="text-lg font-semibold text-indigo-800 mb-2">Role-based Access</h4>
+          <p class="text-gray-700">Secure access for Admins, Officers, and Suppliers.</p>
+        </div>
+        <div class="p-6 bg-indigo-100 rounded-xl shadow hover:shadow-md">
+          <h4 class="text-lg font-semibold text-indigo-800 mb-2">Smart Alerts</h4>
+          <p class="text-gray-700">Get notified when stocks are low or items need servicing.</p>
+        </div>
+        <div class="p-6 bg-indigo-100 rounded-xl shadow hover:shadow-md">
+          <h4 class="text-lg font-semibold text-indigo-800 mb-2">Service Provider Panel</h4>
+          <p class="text-gray-700">Connect with trusted vendors for military-grade supplies.</p>
+        </div>
+        <div class="p-6 bg-indigo-100 rounded-xl shadow hover:shadow-md">
+          <h4 class="text-lg font-semibold text-indigo-800 mb-2">Reports & Analysis</h4>
+          <p class="text-gray-700">Export usage reports, generate logs, and analyze stock patterns.</p>
+        </div>
+        <div class="p-6 bg-indigo-100 rounded-xl shadow hover:shadow-md">
+          <h4 class="text-lg font-semibold text-indigo-800 mb-2">Mobile Friendly</h4>
+          <p class="text-gray-700">Access the system anywhere — desktop, tablet, or mobile.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-gray-50 py-12">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold text-gray-800 mb-4">About ADRDE Inventory</h3>
+      <p class="text-gray-600 mb-4">
+        ADRDE Inventory System is designed for smart management of defense resources. We aim to automate tracking, issuing, servicing, and reporting of military tools, weapons, and machinery.
+      </p>
+      <p class="text-gray-600">
+        🇮🇳 Made with precision, for our heroes in uniform. Strengthening logistics with technology.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p>&copy; 2025 ADRDE Inventory System. All rights reserved.</p>
+      <p class="text-sm mt-2">Built with ❤️ in India for the armed forces.</p>
+    </div>
+  </footer>
+
+  <!-- Image Slider Script -->
+  <script>
+    const slider = document.getElementById("slider");
+    let slideIndex = 0;
+    const totalSlides = slider.children.length;
+
+    function showSlide(index) {
+      slider.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    function nextSlide() {
+      slideIndex = (slideIndex + 1) % totalSlides;
+      showSlide(slideIndex);
+    }
+
+    function prevSlide() {
+      slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+      showSlide(slideIndex);
+    }
+
+    setInterval(nextSlide, 4000);
+  </script>
+  
+
+</body>
+</html>
