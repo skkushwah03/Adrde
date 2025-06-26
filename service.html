@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services - ADRDE Inventory</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-700">ADRDE Inventory</h1>
+      <nav class="space-x-6 text-sm sm:text-base">
+        <a href="dashboard.html" class="text-gray-700 hover:text-indigo-600">Home</a>
+        <a href="shop.html" class="text-gray-700 hover:text-indigo-600">Shop</a>
+        <a href="cart.html" class="text-gray-700 hover:text-indigo-600">Cart</a>
+        <a href="service.html" class="text-indigo-600 font-semibold">Services</a>
+        <!-- <a href="about.html" class="text-gray-700 hover:text-indigo-600">About</a> -->
+        <!-- <a href="login.html" class="text-gray-700 hover:text-indigo-600">Login</a> -->
+          <a href="#" onclick="logout()" class="text-gray-700 hover:text-red-600 font-semibold">Logout</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-100 py-12 text-center">
+    <h2 class="text-3xl font-bold text-indigo-800 mb-4">Our Services</h2>
+    <p class="max-w-xl mx-auto text-gray-700">
+      Empowering India’s defense sectors with smart logistics and inventory management solutions.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid sm:grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Army -->
+      <div class="bg-green-100 p-6 rounded-xl shadow hover:shadow-md">
+        <h3 class="text-xl font-bold text-green-800 mb-2">Indian Army</h3>
+        <p class="text-gray-700 mb-4">
+          We provide real-time tracking and resource planning for field operations, maintenance scheduling of land-based equipment, weapons, and surveillance devices.
+        </p>
+        <ul class="list-disc list-inside text-gray-700 text-sm">
+          <li>Weapons & Ammunition Inventory</li>
+          <li>Vehicle & Tank Maintenance</li>
+          <li>Supply Chain for Field Units</li>
+        </ul>
+      </div>
+
+      <!-- Air Force -->
+      <div class="bg-blue-100 p-6 rounded-xl shadow hover:shadow-md">
+        <h3 class="text-xl font-bold text-blue-800 mb-2">Indian Air Force</h3>
+        <p class="text-gray-700 mb-4">
+          We enable digital tracking of air assets, spare parts, hangar tools, and help coordinate service schedules of aircrafts and drones.
+        </p>
+        <ul class="list-disc list-inside text-gray-700 text-sm">
+          <li>Aircraft Inventory & Parts</li>
+          <li>Hangar Resource Monitoring</li>
+          <li>Flight Operations Logs</li>
+        </ul>
+      </div>
+
+      <!-- Navy -->
+      <div class="bg-gray-100 p-6 rounded-xl shadow hover:shadow-md">
+        <h3 class="text-xl font-bold text-gray-800 mb-2">Indian Navy</h3>
+        <p class="text-gray-700 mb-4">
+          We assist in the management of marine-grade inventory, ship maintenance logs, submarine parts, and underwater communication systems.
+        </p>
+        <ul class="list-disc list-inside text-gray-700 text-sm">
+          <li>Ship Equipment Inventory</li>
+          <li>Logistics for Naval Bases</li>
+          <li>Submarine & Comm Devices</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-12 bg-indigo-50 text-center">
+    <h3 class="text-2xl font-bold text-indigo-800 mb-4">Custom Defense Solutions</h3>
+    <p class="max-w-xl mx-auto text-gray-700 mb-6">
+      Our platform is adaptable to the unique requirements of any government defense organization. Let's strengthen national defense with technology.
+    </p>
+    <a href="contact.html" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full hover:bg-indigo-700">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p>&copy; 2025 ADRDE Inventory System. All rights reserved.</p>
+      <p class="text-sm mt-2">Serving the forces of India with pride and precision.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
